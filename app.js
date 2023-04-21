@@ -1,5 +1,4 @@
 const searchInput = document.querySelector('.search');
-const btn = document.querySelector('.btn');
 const mainContent = document.querySelector('.main-content');
 
 let res = null;
@@ -30,4 +29,4 @@ async function getMovies() {
   });
 }
 
-btn.addEventListener('click', getMovies);
+searchInput.addEventListener('keypress', getMovies);
